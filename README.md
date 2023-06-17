@@ -1,2 +1,2 @@
 # RSW-W-Python
- Code for RSW
+ A very simple ransomware created using Fernet
